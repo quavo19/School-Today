@@ -548,6 +548,14 @@ header .container {
     bottom: -180px;
     left: -150px;
   }
+
+  .apply-section {
+    margin: 20px;
+  }
+
+  .apply-container .title-des {
+    padding: 1rem;
+}
 }
 
 @media screen and (max-width: 470px) {
