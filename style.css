@@ -32,6 +32,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -193,7 +199,7 @@ header .container {
 }
 
 .big-title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--darkOne);
   text-transform: capitalize;
   line-height: 1.4;
@@ -211,9 +217,8 @@ header .container {
   box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
 }
 
-.person {
-  width: 123%;
-  transform: translate(15%, 25px);
+.heading {
+  font-size: calc(1.375rem + 1.5vw);
 }
 
 .toggle-btn {
@@ -271,6 +276,56 @@ header .container {
   animation: appear 1s 1 both;
 }
 
+.others-section,
+.facilities-section {
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+}
+
+.facilities {
+  flex-direction: row;
+  width: 100vw;
+  margin-top: 5%;
+}
+
+.facility img {
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.facility p {
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.facility {
+  flex-direction: column;
+  width: 20%;
+  margin: 2%;
+}
+
+.other-about {
+  justify-content: space-between;
+}
+
+.title-des {
+  width: 50%;
+}
+
+.otheres img {
+  width: 35%;
+}
+
 @keyframes appear {
   0% {
     clip-path: circle(30% at -25% -25%);
@@ -283,6 +338,15 @@ header .container {
 @media screen and (max-width: 870px) {
   .hamburger-menu {
     display: flex;
+  }
+
+  .facilities {
+    flex-direction: column;
+  }
+  
+  .facility {
+    width: 90%;
+    margin: 1.5rem;
   }
 
   .links {
@@ -351,7 +415,7 @@ header .container {
   }
 
   .big-title {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .text {
@@ -380,7 +444,7 @@ header .container {
   }
 
   .big-title {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
   }
 
   .text {
